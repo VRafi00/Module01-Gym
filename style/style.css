@@ -1,17 +1,22 @@
 body {
     font-family: 'Montserrat', sans-serif;
     background: #FEFCFE;
+    color: #2B3541;
+    font-weight: 700;
 }
 .container {
     max-width: 1142px;
     margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
+/* header */
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 50px;
-    padding-bottom: 27px;
+    margin-bottom: 16px;
 }
 .header-item {
     display: flex;
@@ -32,9 +37,121 @@ body {
     font-size: 18px;
     font-weight: 400;
     color: #2B3541;
+    border-bottom: 1px solid #2B3541;
+    border-bottom: none;
+}
+.header-nav a:hover {
+    border-bottom: 1px solid #2B3541;
 }
 .header-social {
-    max-height: 30px;
+    max-height: 38px;
+
     display: flex;
-    gap: 30px;
+    gap: 20px;
+    align-items: center;
+}
+.header-insta-icon {
+    background-image: url(../images/icons/instagram.svg);
+    background-size: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 38px;
+    height: 38px;
+}
+.header-insta-icon:hover {
+    background-size: 38px;
+}
+.header-fb-icon {
+    background-image: url(../images/icons/faceBook.svg);
+    background-size: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 38px;
+    height: 38px;
+    margin-right: -2px;
+}
+.header-fb-icon:hover {
+    background-size: 38px;
+}
+/* main */
+.content {
+    padding-top: 227px;
+    padding-right: 464px;
+    position: relative;
+}
+.content-title {
+    font-size: 48px;
+    text-transform: uppercase;
+    text-align: left;
+    margin-top: 0;
+    line-height: 125%;
+    letter-spacing: 0.03em;
+    margin-bottom: 45px;
+}
+.content-title-traning {
+    font-size: 40px;
+    font-weight: 400;
+}
+.content-about {
+    padding: 5px 280px 0 92px;
+}
+.content-text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+    margin-bottom: 34px;
+}
+.content-about-link {
+    text-decoration: none;
+    color: #2B3541;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 150%;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    text-align: center;
+    padding: 20px 30px;
+    background-color: #FBF138;
+    box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.3);
+}
+.content-about-link:hover {
+    background-color: #2B3541;
+    box-shadow: 0px 13px 24px rgba(70, 86, 106, 0.2);
+    color: #FBF138;
+}
+.content-arrow {
+    display: block;
+    margin-top: 183px;
+}
+.content-background {
+    position: absolute;
+    top: 0;
+    left: 427px
+}
+.content-gradient {
+    height: 850px;
+    display: flex;
+    gap: 20px;
+}
+.gradient-first {
+    height: 100%;
+    width: 535px;
+    background: linear-gradient(90deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 145.23%);
+    opacity: 0.2;
+}
+.gradient-second {
+    width: 235px;
+    height: 100%;
+    background: linear-gradient(90deg, #FDF9B6 0%, rgba(253, 249, 182, 0.7) 166.81%);
+    opacity: 0.2;
+}
+.content-bg-image {
+    height: 930px;
+    width: 996px;
+    position: absolute;
+    left: -117px;
+    top: 39px;
+    background-image: url(../images/girl.png);
+    background-repeat: no-repeat;
+    background-position-x: 20px;
 }
