@@ -126,8 +126,12 @@ li {
     color: #FBF138;
 }
 .content-arrow {
-    display: block;
+    display: inline-block;
     margin-top: 183px;
+    transition: 0.3s;
+}
+.content-arrow:hover {
+    transform: scale(1.2);
 }
 .content-background {
     position: absolute;
@@ -236,18 +240,27 @@ li {
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.03em;
-    color: #FBF138;
+    color: #2B3541;
     font-size: 16px;
     line-height: 150%;
-    background: #2B3541;
-    box-shadow: 0px 13px 24px rgba(70, 86, 106, 0.28);
+    background: #FBF138;
+    box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.3);
     padding: 20px 37px;
     opacity: 0;
+    transition: 0.3s;
 }
 .event-card-gradient:hover .event-card-btn {
     opacity: 1;
 }
+.event-card-btn:hover {
+    background: #2B3541;
+    box-shadow: 0px 13px 24px rgba(43, 53, 65, 0.2);
+    color: #FBF138;
+}
 /* schedule */
+.schedule {
+    margin-bottom: 160px
+}
 .schedule-header {
     display: flex;
     justify-content: space-between;
@@ -273,6 +286,8 @@ li {
 .schedule-grid-item {
     border: 1px solid #000;
     position: relative;
+    transition: 0.5s;
+    overflow: hidden;
     /*
     box-shadow: 0px 0px 0px transparent;
     padding: 20px 30px;
@@ -302,7 +317,7 @@ li {
 .schedule-grid-item:nth-child(4) {
    grid-column: 1 / 2;
    grid-row: 2 / 5;
-   padding-top: 102px;
+   padding-top: 237px;
    padding-left: 32px;
 }
 .schedule-grid-item:nth-child(5) {
@@ -316,6 +331,19 @@ li {
    grid-row: 3 / 5;
    padding-top: 226px;
    padding-left: 30px;
+}
+.schedule-grid-item:hover {
+    border: 1px solid transparent;
+    background:rgba(243, 243, 243, 0.5);
+    box-shadow: 0px 4px 30px rgba(43, 53, 65, 0.2);
+    padding-top: 40px;
+}
+.schedule-grid-item.active {
+    background: linear-gradient(
+180deg, rgba(251, 241, 56, 0.7) 0%, rgba(253, 249, 182, 0.45) 100%);
+    box-shadow: 0px 13px 30px rgb(186 180 69 / 20%);
+    border: none;
+    padding-top: 40px;
 }
 .schedule-grid-title {
     font-size: 18px;
@@ -333,4 +361,28 @@ li {
     position: absolute;
     top: 3px;
     right: 30px;
+}
+.schedu-grid-about {
+    font-size: 18px;
+    line-height: 150%;
+    font-weight: 400;
+}
+/* subscribe */
+.subscribe {
+    background: #F3F3F3;
+    text-align: center;
+    padding-top: 40px;
+}
+.subscribe-title {
+    font-size: 40px;
+    line-height: 49px;
+}
+.subcribe-input {
+    background: #FFFFFF;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    opacity: 0.3;
+    border: 1px solid #FFFFFF;
+    padding: 19px 250px 19px 28px;
 }
