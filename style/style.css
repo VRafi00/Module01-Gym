@@ -628,13 +628,12 @@ footer {
     font-size: 16px;
     text-decoration: none;
     color: #2B3541;
+    letter-spacing: 0.02em;
 }
 .footer-social ul {
     display: flex;
     list-style-type: none;
     padding-left: 0;
-}
-li {
 }
 .footer-insta-icon {
     display: block;
@@ -669,4 +668,8 @@ li {
 }
 .footer-text p {
     margin-top: 7px;
+}
+.footer-text a {
+    text-decoration-color: #2B3541;
+    color: #2B3541;
 }
