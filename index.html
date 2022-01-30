@@ -12,16 +12,16 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <header>
+    <header id="header-top">
         <div class="container">
             <div class="header">
                     <div class="header-item">
                     <a href="#" class="header-logo"><img src="./images/icons/logo.svg" alt="logo-icon"></a>
                     <nav>
                         <ul class="header-nav">
-                            <li><a href="#events">Мероприятия</a></li>
-                            <li><a href="#training-schedul">Расписание</a></li>
-                            <li><a href="#">О компании</a></li>
+                            <li><a href="#events" class="smooth-scroll">Мероприятия</a></li>
+                            <li><a href="#training-schedul" class="smooth-scroll">Расписание</a></li>
+                            <li><a href="#about-company" class="smooth-scroll">О компании</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -43,9 +43,9 @@
                 <span class="content-title-traning">&gt; 15 &nbsp;тренировок</span>
                 <div class="content-about">
                     <p class="content-text">в области спортивной физиологии и нутрициологии</p>
-                    <a href="#" class="content-about-link">Узнать подробнее</a>
+                    <a href="#training-schedul" class="content-about-link smooth-scroll">Узнать подробнее</a>
                 </div>
-                <a href="#events" class="content-arrow"><img src="./images/icons/arrow.svg" alt="arrow-icon"></a>
+                <a href="#events" class="content-arrow smooth-scroll"><img src="./images/icons/arrow.svg" alt="arrow-icon"></a>
                 <div class="content-background">
                     <div class="content-gradient">
                         <div class="gradient-first"></div>
@@ -164,10 +164,10 @@
         <section class="company">
             <div class="container">
                 <div class="company-box">
-                    <div class="company-about">
+                    <div class="company-about" id="about-company">
                         <h3 class="company-about-title">О компании</h3>
                         <p class="company-about-text">Наша компания является одной из немногих, кто предлагает фитнес услуги онлайн! Оставайтесь с&nbspнами и вы сами увидите, что мы проводим не&nbspтолько онлайн-тренировки.</p>
-                        <a href="#" class="company-signUp">Записаться</a>
+                        <button type="button" class="company-signUp" id="popUpBtn">Записаться</button>
                     </div>
                     <div class="company-bg"><img src="./images/about-company-img.png" alt="girl-training"></div>
                 </div>
@@ -190,6 +190,20 @@
                     </div>
                 </div>
             </div>
+            <div class="company-signUp-popUp" id="modal">
+                <div class="signUp-popUp-box">
+                    <a href="#" class="signUp-popUp-close"></a>
+                    <div class="signUp-popUp-title">
+                        <h3>Заявка на участие «Марафон выносливости»</h3>
+                        <p>Заполните все поля, и мы пришлем информацию в ближайшее время</p>
+                    </div>
+                    <form action="" class="signUp-popUp-form">
+                        <input type="email" class="company-signUp-email" placeholder="Ваш e-mail" required>
+                        <input type="tel" class="company-signUp-tel" placeholder="Ваш номер телефона" required>
+                        <button type="submit" class="company-signUp-btn">Отправить</button>
+                   </form>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
@@ -200,9 +214,9 @@
                         <a href="#" class="footer-logo"><img src="./images/icons/logo.svg" alt="logo-icon"></a>
                         <nav>
                             <ul class="footer-nav">
-                                <li><a href="#events">Мероприятия</a></li>
-                                <li><a href="#training-schedul">Расписание</a></li>
-                                <li><a href="#">О компании</a></li>
+                                <li><a href="#events" class="smooth-scroll">Мероприятия</a></li>
+                                <li><a href="#training-schedul" class="smooth-scroll">Расписание</a></li>
+                                <li><a href="#about-company" class="smooth-scroll">О компании</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -220,6 +234,73 @@
                 </div>
             </div>
         </div>
+        <a href="#header-top" class="button-up visible" id="btnUp">наверх</a>
     </footer>
+    <script>
+        //smooth scroll
+        const links = document.querySelectorAll(".smooth-scroll");
+        for (const link of links) {
+            link.addEventListener("click", clickHandler);
+        }
+        function clickHandler(e) {
+            e.preventDefault();
+            const href = this.getAttribute("href");
+
+            document.querySelector(href).scrollIntoView({
+                behavior: "smooth"
+            });
+        }
+        //button up
+        window.onscroll = function(){scrollFunction()};
+
+        const upbuttons = document.querySelectorAll(".button-up");
+
+        for (const upbutton of upbuttons) {
+            upbutton.addEventListener("click", clickHandler);
+        }
+
+        function clickHandler(e) {
+            e.preventDefault();
+            const href = this.getAttribute("href");
+
+            document.querySelector(href).scrollIntoView({
+                behavior: "smooth"
+            });
+        }
+
+        function scrollFunction(){
+            if ( document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000){
+                document.getElementById('btnUp').className = 'button-up visible';
+            } else {
+                document.getElementById('btnUp').className = 'button-up hidden';
+            }
+        }
+        //popUp menu
+        // Get the modal
+        var modal = document.getElementById("modal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("popUpBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("signUp-popUp-close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+        if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>
