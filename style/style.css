@@ -23,6 +23,16 @@ body {
     display: flex;
     gap: 92px;
 }
+.header-burger-menu {
+    display: none;
+    width: 29px;
+    height: 22px;
+    background: url(../images/icons/burger-icon.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border: none;
+}
 .header-item a {
     display: flex;
     align-items: center;
@@ -47,6 +57,7 @@ body {
     display: flex;
     list-style-type: none;
     padding-left: 0;
+    gap: 30px;
 }
 .header-insta-icon {
     display: block;
@@ -73,7 +84,6 @@ body {
     transition: 0.3s;
     transform: scale(1);
     opacity: 0.8;
-    margin-left: 30px;
 }
 /* background */
 .content {
@@ -126,10 +136,46 @@ body {
     display: inline-block;
     margin-top: 183px;
     transition: 0.3s;
+    background: url(../images/icons/arrow.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 52px;
+    height: 55px;
 }
 .content-arrow:hover {
     transform: scale(1.2);
 }
+.content-background {
+    display: flex;
+    max-width: 790px;
+    width: 100%;
+    max-height: 852px;
+    height: 100%;
+    gap: 20px;
+    position: absolute;
+    top: 0;
+    left: 426px;
+    z-index: -1;
+}
+.gradient-first {
+    background: linear-gradient(90deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 145.23%);
+    opacity: 0.2;
+    flex-basis: 68%;
+}
+.gradient-second {
+    background: linear-gradient(90deg, #FDF9B6 0%, rgba(253, 249, 182, 0.7) 166.81%);
+    opacity: 0.2;
+    flex-basis: 30%;
+}
+.bg-girl {
+    width: 987px;
+    height: 810px;
+    position: absolute;
+    top: 38px;
+    left: -100px;
+}
+/*
 .content-background {
     position: absolute;
     top: 0;
@@ -153,6 +199,14 @@ body {
     background: linear-gradient(90deg, #FDF9B6 0%, rgba(253, 249, 182, 0.7) 166.81%);
     opacity: 0.2;
 }
+.bg-girl {
+    height: 810px;
+    width: 985px;
+    position: absolute;
+    left: -99px;
+    top: 39px;
+}
+
 .content-bg-image {
     height: 930px;
     width: 1006px;
@@ -163,6 +217,8 @@ body {
     background-repeat: no-repeat;
     background-position-x: 20px;
 }
+*/
+
 /* event card*/
 .event {
     margin-bottom: 40px;
@@ -234,6 +290,7 @@ body {
     text-decoration: none;
     text-align: center;
     text-transform: uppercase;
+    font-weight: 700;
     letter-spacing: 0.03em;
     color: #2B3541;
     font-size: 16px;
@@ -243,6 +300,10 @@ body {
     padding: 20px 37px;
     opacity: 0;
     transition: 0.3s;
+    border: none;
+}
+.event-btn-add {
+    display: none;
 }
 .event-card-gradient:hover .event-card-btn {
     opacity: 1;
@@ -339,7 +400,7 @@ body {
     font-size: 18px;
     line-height: 125%;
     margin: 0;
-    padding-top: 37px;
+    margin-top: 37px;
 }
 .schedule-grid-date {
     line-height: 125%;
@@ -360,15 +421,17 @@ body {
     background: #F3F3F3;
     text-align: center;
     padding-top: 40px;
-    padding-bottom: 72px;
+    padding-bottom: 82px;
 }
 .subscribe-form {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     padding-left: 23px;
     padding-right: 5px;
     max-width: 617px;
     margin: 0 auto;
+    row-gap: 13px;
 }
 .subscribe-title {
     font-size: 40px;
@@ -395,7 +458,7 @@ body {
     font-weight: 400;
     line-height: 150%;
     border: 1px solid #FFFFFF;
-    width: 100%;
+    flex-basis: 339px;
     padding: 17px 10px 17px 20px;
 }
 .subcribe-input:invalid {
@@ -431,7 +494,6 @@ body {
 .subscribe-agreement {
     display: flex;
     max-width: 602px;
-    margin: 12px auto;
 }
 .subscribe-agreement a, .subscribe-agreement label {
     text-decoration-color: rgba(43, 53, 65, 0.5);
@@ -851,3 +913,6 @@ footer {
 .hidden {
     opacity: 0;
 }
+
+
+

@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/normalize.css">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/media.css">
 </head>
 <body>
     <header id="header-top">
@@ -17,6 +18,7 @@
             <div class="header">
                     <div class="header-item">
                     <a href="#" class="header-logo"><img src="./images/icons/logo.svg" alt="logo-icon"></a>
+                    <button type="button" class="header-burger-menu"></button>
                     <nav>
                         <ul class="header-nav">
                             <li><a href="#events" class="smooth-scroll">Мероприятия</a></li>
@@ -39,19 +41,22 @@
     <div class="bg">
         <div class="container">
             <div class="content">
-                <h1 class="content-title">Онлайн тренировки любой сложности</h1>
-                <span class="content-title-traning">&gt; 15 &nbsp;тренировок</span>
-                <div class="content-about">
-                    <p class="content-text">в области спортивной физиологии и нутрициологии</p>
-                    <a href="#training-schedul" class="content-about-link smooth-scroll">Узнать подробнее</a>
+                <div class="content-box">
+                    <h1 class="content-title">Онлайн тренировки любой сложности</h1>
+                    <span class="content-title-traning">&gt; 15 &nbsp;тренировок</span>
+                    <div class="content-about">
+                        <p class="content-text">в области спортивной физиологии и нутрициологии</p>
+                        <a href="#training-schedul" class="content-about-link smooth-scroll">Узнать подробнее</a>
+                    </div>
+                    <a href="#events" class="content-arrow smooth-scroll"></a>
                 </div>
-                <a href="#events" class="content-arrow smooth-scroll"><img src="./images/icons/arrow.svg" alt="arrow-icon"></a>
                 <div class="content-background">
-                    <div class="content-gradient">
                         <div class="gradient-first"></div>
                         <div class="gradient-second"></div>
+                        <img src="./images/girl.png" alt="girl" class="bg-girl">
+                    <!--<div class="content-gradient">
                         <div class="content-bg-image"></div>
-                    </div>
+                    </div>-->
                 </div>
             </div>
         </div>
@@ -65,7 +70,8 @@
                         <div class="event-card-gradient">
                             <p class="event-card-date">29.06 - 4.07</p>
                             <span class="event-card-title">Марафон выносливости</span>
-                            <a href="#" class="event-card-btn">учавствовать</a>
+                            <button type="button" class="event-card-btn popUpBtn">учавствовать</button>
+                            <button type="button" class="event-btn-add"></button>
                             <span class="event-card-theme">марафон</span>
                         </div>
                     </div>
@@ -73,7 +79,8 @@
                         <div class="event-card-gradient">
                             <p class="event-card-date">9.07</p>
                             <span class="event-card-title">Как стать тренером?</span>
-                            <a href="#" class="event-card-btn">учавствовать</a>
+                            <button type="button" class="event-card-btn popUpBtn">учавствовать</button>
+                            <button type="button" class="event-btn-add"></button>
                             <span class="event-card-theme">вебинар</span>
                         </div>
                     </div>
@@ -81,7 +88,8 @@
                         <div class="event-card-gradient">
                             <p class="event-card-date">15.07</p>
                             <span class="event-card-title">Йога, как стиль жизни</span>
-                            <a href="#" class="event-card-btn">учавствовать</a>
+                            <button type="button" class="event-card-btn">учавствовать</button>
+                            <button type="button" class="event-btn-add"></button>
                             <span class="event-card-theme">вебинар</span>
                         </div>
                     </div>
@@ -154,11 +162,11 @@
                 <form action="" class="subscribe-form">
                     <input class="subcribe-input" type="email" placeholder="Ваш e-mail">
                     <button type="submit" class="subscribe-btn">Подписаться</button>
+                    <div class="subscribe-agreement">
+                        <input type="checkbox" id="01" class="checkbox">
+                        <label for="01" >Согласен с обработкой <a href="#" target="_blank">персональных данных</a></label>
+                    </div>
                 </form>
-                <div class="subscribe-agreement">
-                    <input type="checkbox" id="01" class="checkbox">
-                    <label for="01" >Согласен с обработкой <a href="#" target="_blank">персональных данных</a></label>
-                </div>
             </div>
         </div>
         <section class="company">
@@ -167,7 +175,7 @@
                     <div class="company-about" id="about-company">
                         <h3 class="company-about-title">О компании</h3>
                         <p class="company-about-text">Наша компания является одной из немногих, кто предлагает фитнес услуги онлайн! Оставайтесь с&nbspнами и вы сами увидите, что мы проводим не&nbspтолько онлайн-тренировки.</p>
-                        <button type="button" class="company-signUp" id="popUpBtn">Записаться</button>
+                        <button type="button" class="company-signUp popUpBtn" id="popUpBtn">Записаться</button>
                     </div>
                     <div class="company-bg"><img src="./images/about-company-img.png" alt="girl-training"></div>
                 </div>
