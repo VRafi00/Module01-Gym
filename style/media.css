@@ -327,3 +327,71 @@
     .footer-text {
         font-size: 10px;
     }
+    /* modal-burger-menu */
+    .modal-burger {
+        position: absolute;
+        top: 0;
+        background: rgba(43, 53, 65, 0.4);
+        width: 100%;
+        height: 100%;
+    }
+    .modal-burger-cover {
+        width: 100%;
+        max-height: 331px;
+        background: #F3F3F3;
+        padding: 13px 0 10px 10px;
+    }
+    .modal-burger-icon {
+        display: flex;
+        justify-content: space-between;
+        max-width: 730px;
+        
+    }
+    .modal-burger-close {
+        background: url(../images/icons/signUp-popUp-close.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 20px;
+        height: 20px;
+        border: none;
+    }
+    .header-nav-modal {
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 0;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        row-gap: 22px;
+        max-width: 730px;
+    }
+
+    .header-nav-modal li {
+        width: 100%;
+        border-bottom: 1px solid rgba(43, 53, 65, .2);
+        padding-bottom: 23px;
+    }
+    .header-nav-modal li:last-child {
+        border: none;
+    }
+    .header-nav-modal a {
+        text-decoration: none;
+        font-size: 16px;
+        color: #2B3541;
+        font-weight: 400;
+    }
+    .burger-modal-social ul{
+        display: flex;
+        justify-content: flex-end;
+        list-style-type: none;
+        padding-left: 0;
+        gap: 30px;
+        max-width: 730px;
+    }
+    .burger-modal-social a {
+        width: 25px;
+        height: 25px;
+    }
+    #modal-burger {
+        top: -1070px;
+    }

@@ -16,9 +16,9 @@
     <header id="header-top">
         <div class="container">
             <div class="header">
-                    <div class="header-item">
+                <div class="header-item">
                     <a href="#" class="header-logo"><img src="./images/icons/logo.svg" alt="logo-icon"></a>
-                    <button type="button" class="header-burger-menu"></button>
+                    <button type="button" class="header-burger-menu" onclick="openModal()"></button>
                     <nav>
                         <ul class="header-nav">
                             <li><a href="#events" class="smooth-scroll">Мероприятия</a></li>
@@ -244,6 +244,27 @@
         </div>
         <a href="#header-top" class="button-up visible" id="btnUp">наверх</a>
     </footer>
+    <div class="modal-burger" id="modal-burger">
+        <div class="modal-burger-cover">
+            <div class="modal-burger-icon">
+                <a href="#" class="header-logo"><img src="./images/icons/logo.svg" alt="logo-icon"></a>
+                <button class="modal-burger-close" onclick="closeModal()"></button>
+            </div>
+            <ul class="header-nav-modal">
+                <li><a href="#">Мероприятия</a></li>
+                <li><a href="#">Расписание</a></li>
+                <li><a href="#">О компании</a></li>
+            </ul>
+            <div class="burger-modal-social">
+                <ul>
+                    <li><a href="#" class="header-insta-icon"></a>
+                    </li>
+                    <li><a href="#" class="header-fb-icon"></a>
+                    </li>
+                 </ul>
+            </div>
+        </div>
+    </div>
     <script>
         //smooth scroll
         const links = document.querySelectorAll(".smooth-scroll");
@@ -283,6 +304,16 @@
                 document.getElementById('btnUp').className = 'button-up hidden';
             }
         }
+        //modal burger menu
+        function openModal() {
+           document.getElementById("modal-burger").style.top = "0px";
+       }
+
+       function closeModal() {
+           document.getElementById("modal-burger").style.top = "-1070px";
+       }
+
+
         //popUp menu
         // Get the modal
         var modal = document.getElementById("modal");
