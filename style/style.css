@@ -88,9 +88,11 @@ body {
 /* background */
 .content {
     padding-top: 226px;
-    padding-right: 464px;
     position: relative;
     margin-bottom: 157px;
+}
+.content-box {
+    max-width: 670px;
 }
 .content-title {
     font-size: 48px;
@@ -155,7 +157,7 @@ body {
     gap: 20px;
     position: absolute;
     top: 0;
-    left: 426px;
+    right: -79px;
     z-index: -1;
 }
 .gradient-first {
@@ -169,10 +171,10 @@ body {
     flex-basis: 30%;
 }
 .bg-girl {
-    width: 987px;
-    height: 810px;
+    max-width: 987px;
+    height: auto;
     position: absolute;
-    top: 38px;
+    bottom: 0;
     left: -100px;
 }
 /*
@@ -913,7 +915,12 @@ footer {
 .hidden {
     opacity: 0;
 }
+/* burger menu */
 
-
-
-
+#modal-burger {
+    top: -1070px;
+}
+.modal-burger {
+    position: absolute;
+    top: 0;
+}
