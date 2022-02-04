@@ -538,7 +538,10 @@
        padding-left: 10%;
     }
     .schedule-grid-item:nth-child(n):hover {
-        min-height: 180px;
+        height: 180px;
+    }
+    .schedule-grid-item.active {
+        height: 180px;
     }
     .schedule-grid-item {
         height: 110px;
