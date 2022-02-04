@@ -187,15 +187,16 @@
     
     .content-background {
         max-width: 359px;
-        max-height: 429px;
+        max-height: 100%;
         bottom: 0;
         right: 1px;
         gap: 15px;
     }
     .bg-girl {
-        width: 399px;
-        height: 327px;
-        top: 102px;
+        max-width: 399px;
+        width: 120%;
+        height: auto;
+        bottom: 0;
         left: -41px;
     }
     .gradient-second {
@@ -255,7 +256,7 @@
         left: 0;
         right: auto;
         padding: 6px 16px;
-    }*/
+    }
     /* schedule */
     .schedule {
         margin-bottom: 96px;
@@ -295,33 +296,33 @@
        padding-left: 24px;
     }
     .schedule-grid-item:nth-child(2) {
-       grid-column: 1 / 2;
-       grid-row: 2 / 3;
-       padding-top: 170px;
+       grid-column: 2 / 2;
+       grid-row: 1 / 2;
+       padding-top: 50px;
        padding-left: 28px;
     }
     .schedule-grid-item:nth-child(3) {
        grid-column: 1 / 2;
-       grid-row: 3 / 4;
-       padding-top: 200px;
+       grid-row: 2 / 3;
+       padding-top: 170px;
        padding-left: 22px;
     }
     .schedule-grid-item:nth-child(4) {
        grid-column: 2 / 2;
-       grid-row: 1 / 2;
-       padding-top: 67px;
+       grid-row: 2 / 3;
+       padding-top: 190px;
        padding-left: 20px;
     }
     .schedule-grid-item:nth-child(5) {
-       grid-column: 2 / 2;
-       grid-row: 2 / 3;
-       padding-top: 190px;
+       grid-column: 1 / 2;
+       grid-row: 3 / 4;
+       padding-top: 205px;
        padding-left: 23px;
     }
     .schedule-grid-item:nth-child(6) {
        grid-column: 2 / 2;
        grid-row: 3 / 4;
-       padding-top: 184px;
+       padding-top: 185px;
        padding-left: 22px;
     }
     .schedule-grid-item:hover {
@@ -330,6 +331,13 @@
         box-shadow: 0px 4px 30px rgba(43, 53, 65, 0.2);
         padding-top: 80px;
     }
+    
+.schedule-grid-item.active {
+    background: linear-gradient(
+180deg, rgba(251, 241, 56, 0.7) 0%, rgba(253, 249, 182, 0.45) 100%);
+    box-shadow: 0px 13px 30px rgb(186 180 69 / 20%);
+    border: none;
+    padding-top: 40px;}
     /* subacribe */
     .subscribe {
         padding-bottom: 40px;
@@ -368,9 +376,6 @@
     .company {
         margin-top: 95px;
     }
-    .company-about {
-        max-width: 375px;
-    }
     .company-about-title {
         font-size: 26px;
     }
@@ -384,19 +389,17 @@
     }
     .company-bg {
         max-height: 227px;
-
-    }
-    .company-bg img {
-        height: 100%;
+        width: 50%;
     }
     .company-profit {
         margin-top: 40px;
         flex-wrap: wrap;
-        gap: 0;
         column-gap: 146px;
+        row-gap: 5px;
     }
     .company-profit-title {
         font-size: 16px;
+        margin-bottom: 16px;
     }
     .company-profit-text {
         font-size: 16px;
@@ -407,16 +410,14 @@
     /* modal-burger-menu */
     .modal-burger {
         position: absolute;
-        top: 0;
         background: rgba(43, 53, 65, 0.4);
         width: 100%;
         height: 100%;
     }
     .modal-burger-cover {
-        width: 100%;
         max-height: 331px;
         background: #F3F3F3;
-        padding: 13px 0 10px 10px;
+        padding: 13px 10px 10px 10px;
     }
     .modal-burger-icon {
         display: flex;
@@ -472,7 +473,231 @@
     #modal-burger {
         top: -2000px;
     }
-    @media (max-width: 750px) {
-        .content-background {
-        }
+    footer {
+        margin-top: 82px;
     }
+}
+@media (max-width: 620px) {
+    .company-profit {
+        column-gap: initial;
+        justify-content: space-between;
+    }
+    .company-box {
+        flex-direction: column-reverse;
+    }
+    .company-about {
+        width: 100%;
+    }
+    .company-bg {
+        width: 100%;
+        max-height: initial;
+    }
+}
+@media (max-width: 580px) {
+    .content-box {
+        max-width: 500px;
+    }
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .content-background {
+        position: relative;
+        height: 460px;
+        width: 150%;
+        max-width: 500px;
+    }
+    .bg-girl {
+        left: initial;
+        width: 150%;
+        max-width: 510px;
+    }
+    .card01 {
+        background-image: url(../images/event-card-image/event-card-image01.png);
+    }
+    .card02 {
+        background-image: url(../images/event-card-image/event-card-image02.png);
+    }
+    .card03 {
+        background-image: url(../images/event-card-image-response/event-360card03.png);
+    }
+}
+@media (max-width: 500px) {
+    .footer-item {
+        flex-direction: column;
+        align-items: center;
+        gap: 41px;
+    }
+   .schedule-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+   .schedule-grid-item:nth-child(n) {
+       padding-top: 0;
+       padding-left: 10%;
+    }
+    .schedule-grid-item:nth-child(n):hover {
+        min-height: 180px;
+    }
+    .schedule-grid-item {
+        height: 110px;
+        width: 100%;
+    }
+    .schedule-grid-item>div {
+        display: flex;
+        position: relative;
+        padding-top: 54px;
+    }
+    .schedule-grid-item:nth-child(1) img{
+        width: 39px;
+        height: 39px;
+    }
+    .schedule-grid-item:nth-child(2) img{
+        width: 34px;
+        height: 53px;
+    }
+    .schedule-grid-item:nth-child(3) img{
+        width: 23px;
+        height: 45px;
+    }
+    .schedule-grid-item:nth-child(4) img{
+        width: 39px;
+        height: 37px;
+    }
+    .schedule-grid-item:nth-child(5) img{
+        width: 46px;
+        height: 25px;
+    }
+    .schedule-grid-item:nth-child(6) img{
+        width: 35px;
+        height: 40px;
+    }
+    .schedule-grid-text {
+        position: absolute;
+        left: 20%;
+    }
+    .schedule-grid-title {
+        margin-top: 15px;
+    }
+    .content-arrow {
+       display: none;
+    }
+    .content {
+        gap: 30px;
+        margin-bottom: 82px;
+    }
+    .content-background {
+        max-width: 430px;
+        height: 380px;
+    }
+    .bg-girl {
+        max-width: 424px;
+    }
+}
+@media (max-width: 400px) {
+    .content-background {
+        height: 340px;
+    }
+    .bg-girl {
+        max-width: 360px;
+    }
+    .event-card {
+        gap: 10px;
+    }
+    .card01 {
+        background-image: url(../images/event-card-image-response/event-360card01.png);
+    }
+    .card02 {
+        background-image: url(../images/event-card-image-response/event-360card02.png);
+    }
+    .card03 {
+        background-image: url(../images/event-card-image-response/event-360card03.png);
+    }
+    .event-card-gradient {
+        padding: 4px 30px 0 19px;
+    }
+    .event-card-title {
+        width: 114px;
+    }
+    .schedule {
+        margin-bottom: 80px;
+    }
+
+}
+@media (max-width:360px) {
+    .container {
+        padding-left: 8px;
+        padding-right: 9px;
+    }
+    .content {
+        padding-top: 27px;
+    }
+    .content-about-link {
+        width: 100%;
+    }
+    .content-background {
+        max-width: 340px;
+        width: 100%;
+        max-height: 320px;
+    }
+    .bg-girl {
+        max-width: 339px;
+    }
+    .company {
+        margin-top: 83px;
+    }
+    .company-information {
+        position: relative;
+        height: 1000px;
+    }
+    .company-about-text {
+        margin-bottom: 14px;
+    }
+    .company-bg {
+        position: absolute;
+        bottom: 0;
+    }
+    .company-signUp {
+        position: absolute;
+        top: 697px;
+        width: 100%;
+    }
+    .company-profit {
+        margin-top: 0;
+    }
+    footer {
+        margin-top: 46px;
+    }
+    .footer-cover {
+        padding-top: 43px;
+        row-gap: 8px;
+        margin-bottom: 20px;
+    }
+    .footer-item {
+        gap: 42px;
+    }
+    .footer-nav {
+        gap: 48px;
+        margin: 0;
+    }
+    .footer-social {
+        gap: 153px;
+    }
+    .footer-text {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+/*
+на позиции 500пиксель сменить картинки в карточка сверить разрешения бэкграундов
+
+доработать размеры карточек и положения текста в грид карточках
+
+сверить с макетом блок с подпиской
+
+выстроить в ряд блок .company-about
+
+сверить бургер меню с макето в 360пиксель
+*/
