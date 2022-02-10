@@ -116,8 +116,9 @@
     .company-profit {
         margin-top: 40px;
         flex-wrap: wrap;
-        column-gap: 19vw;
+        column-gap: 13vmin;
         row-gap: 5px;
+        justify-content: flex-start;
     }
     .company-profit-cover:nth-child(n) {
         flex-basis: 34vw;
@@ -504,9 +505,6 @@
         padding: 21px 46px 20px 45px;
     }
     .company-profit {
-        margin-top: 40px;
-        flex-wrap: wrap;
-        column-gap: 146px;
         row-gap: 5px;
     }
     .company-profit-title {
@@ -603,6 +601,9 @@
     .company-bg {
         width: 100%;
     }
+    .company-profit-cover:nth-child(n) {
+        flex-basis: 90vmin;
+    }
 }
 @media (max-width: 580px) {
     .content-box {
@@ -631,6 +632,23 @@
     }
     .card03 {
         background-image: url(../images/event-card-image-response/event-360card03.png);
+    }
+    .signUp-popUp-box {
+        padding: 50px 10px;
+    }
+    .signUp-popUp-title h3 {
+        font-size: 18px;
+        line-height: 150%;
+    }
+    .signUp-popUp-title h3:before {
+        width: 31px;
+        height: 31px;
+        top: -15px;
+        left: -15px;
+    }
+    .signUp-popUp-title p {
+        font-size: 16px;
+        line-height: 125%;
     }
 }
 @media (max-width: 500px) {
@@ -723,9 +741,6 @@
     }
     .bg-girl {
         max-width: 100%;
-    }
-    .company-profit-cover:nth-child(n) {
-        flex-basis: 77vw;
     }
 }
 @media (max-width: 400px) {

@@ -648,17 +648,18 @@ body {
     height: 100%;
     background-color: rgba(0,0,0,0.4);
     z-index: 2;
-    display: flex;
 }
 .signUp-popUp-box {
-    width: 600px;
-    height: 577px;
+    max-width: 600px;
+    max-height: 577px;
     background-color: #F3F3F3;
-    margin: 20% auto;
+    margin: 0 auto;
+    top: 20%;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
+    padding: 60px 50px 80px 50px;
 }
 .signUp-popUp-close {
     position: absolute;
@@ -687,6 +688,7 @@ body {
     font-weight: 700;
     position: relative;
     z-index: 1;
+    display: inline;
 }
 .signUp-popUp-title h3::before {
     content: "";
@@ -698,7 +700,7 @@ body {
     border-radius: 50%;
     z-index: -1;
     top: -30px;
-    left: 35px;
+    left: -30px;
 }
 .signUp-popUp-title p{
     font-size: 18px;
@@ -708,7 +710,7 @@ body {
 .signUp-popUp-form {
     display: flex;
     flex-direction: column;
-    width: 500px;
+    width: 100%;
 }
 .signUp-popUp-form input {
     display: block;
