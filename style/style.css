@@ -90,6 +90,8 @@ body {
     padding-top: 226px;
     position: relative;
     margin-bottom: 157px;
+
+    max-width: 76vw;
 }
 .content-box {
     max-width: 670px;
@@ -136,7 +138,7 @@ body {
 }
 .content-arrow {
     display: inline-block;
-    margin-top: 183px;
+    margin-top: 10vw;
     transition: 0.3s;
     background: url(../images/icons/arrow.svg);
     background-repeat: no-repeat;
@@ -350,12 +352,21 @@ body {
     box-shadow: 0px 4px 30px rgba(43, 53, 65, 0.2);
     padding-top: 40px;
 }
+.schedule-grid-item:nth-child(3):hover {
+    padding-top: 110px;
+}
+.schedule-grid-item:nth-child(5):hover {
+    padding-top: 80px;
+}
+.schedule-grid-item:nth-child(6):hover {
+    padding-top: 130px;
+}
 .schedule-grid-item.active {
     background: linear-gradient(
 180deg, rgba(251, 241, 56, 0.7) 0%, rgba(253, 249, 182, 0.45) 100%);
     box-shadow: 0px 13px 30px rgb(186 180 69 / 20%);
     border: none;
-    padding-top: 40px;
+    padding-top: 110px;
 }
 .schedule-grid-title {
     font-size: 18px;
@@ -463,6 +474,9 @@ body {
     font-size: 11px;
     line-height: 150%;
     font-weight: 400;
+}
+.subscribe-agreement a:hover {
+    color: #2B3541;
 }
 .checkbox:checked,
 .checkbox:not(:checked){
@@ -575,7 +589,7 @@ body {
 }
 .company-bg {
     width: 51%;
-    height: auto;
+    height: 100%;
     background-size: cover;
     background-position: center;
     position: relative;
@@ -594,9 +608,9 @@ body {
 }
 .company-profit{
     display: flex;
-    justify-content: flex-start;
-    gap: 67px;
-    margin-top: 55px;
+    justify-content: space-between;
+    gap: 3.5vw;
+    margin-top: 53px;
 }
 .company-profit-cover {
     text-align: left;
@@ -615,6 +629,7 @@ body {
 }
 .company-profit-title {
     margin-bottom: 20px;
+    line-height: 125%;
 }
 .company-profit-text {
     font-weight: 400;
@@ -841,14 +856,19 @@ footer {
 .footer-text {
     display: flex;
     justify-content: space-between;
-    opacity: 0.3;
 }
 .footer-text p {
     margin-top: 7px;
+    color: #2B3541;
+    opacity: 0.5;
 }
 .footer-text a {
     text-decoration-color: #2B3541;
     color: #2B3541;
+    opacity: 0.5;
+}
+.footer-text a:hover {
+    opacity: 1;
 }
 /* btn-up */
 .button-up {
