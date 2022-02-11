@@ -116,7 +116,8 @@
     .company-profit {
         margin-top: 40px;
         flex-wrap: wrap;
-        column-gap: 13vmin;
+        -moz-column-gap: 13vmin;
+             column-gap: 13vmin;
         row-gap: 5px;
         justify-content: flex-start;
     }
@@ -589,7 +590,8 @@
 }
 @media (max-width: 620px) {
     .company-profit {
-        column-gap: initial;
+        -moz-column-gap: initial;
+             column-gap: initial;
         justify-content: space-between;
     }
     .company-box {
