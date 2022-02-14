@@ -14,10 +14,10 @@
         padding: 0 60px 0 0;
     }
     .content-box {
-        max-width: 43vw;
+        max-width: 41vw;
     }
     .bg-girl {
-        max-width: 81vw;
+        max-width: 79vmax;
     }
     .event-title {
         font-size: 26px;
@@ -25,6 +25,9 @@
     }
 }
 @media (max-width: 1050px) {
+    .content {
+        max-width: 88vw;
+    }
     .content-background {
         width: 60%;
         right: 100px;
@@ -79,10 +82,18 @@
 }
 @media (max-width: 980px) {
     .content-background {
-        right: 140px;
+        right: 40px;
+        max-width: 528px;
+        width: 100%;
+    }
+    .content-arrow {
+        margin-top: 10px;
     }
     .bg-girl {
         max-width: 672px;
+    }
+    .event-card-btn {
+        padding: 15px 16px;
     }
     /* footer */
     footer {
@@ -245,13 +256,15 @@
     .content {
         padding-top: 26px;
         margin-bottom: 104px;
+        max-width: 100%;
     }
-    
+    .content-arrow {
+        margin-top: 40px;
+    }
     .content-background {
         max-width: 359px;
-        max-height: 100%;
         bottom: 0;
-        right: 20px;
+        right: 0;
         gap: 15px;
     }
     .bg-girl {
@@ -487,7 +500,7 @@
     }
     .bg-girl {
         left: initial;
-        max-width: 94vw;
+        max-width: 88vw;
     }
     .content-arrow {
        display: none;
@@ -517,6 +530,9 @@
     .signUp-popUp-title p {
         font-size: 16px;
         line-height: 125%;
+    }
+    .footer-item {
+        gap: 0;
     }
 }
 @media (max-width: 500px) {
