@@ -47,6 +47,7 @@ body {
     text-decoration: none;
     font-weight: 400;
     color: #2B3541;
+    line-height: 30px;
     border-bottom: 1px solid transparent;
     transition: 0.5s;
 }
@@ -272,6 +273,7 @@ body {
     background: #2B3541;
     box-shadow: 0px 13px 24px rgba(43, 53, 65, 0.2);
     color: #FBF138;
+    cursor: pointer;
 }
 /* schedule */
 .schedule {
@@ -457,6 +459,7 @@ body {
     font-weight: 700;
     color: #2B3541;
     transition: 0.3s;
+    cursor: pointer;
 }
 .subscribe-btn:hover {
     color: #FBF138;
@@ -582,6 +585,7 @@ body {
     color: #2B3541;
     transition: 0.3s;
     text-decoration: none;
+    cursor: pointer;
 }
 .company-signUp:hover {
     color: #FBF138;
