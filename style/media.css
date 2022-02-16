@@ -1,69 +1,46 @@
-
-@media (max-width: 1300px) {
-    .content {
-        max-width: 100%;
-    }
+@media (min-width: 1921px) {
     .content-title {
-        font-size: 3.5vw;
+        font-size: 48px;
     }
     .content-background {
-        right: 70px;
-    }
-    .content-about {
-        font-size: 16px;
-        padding: 0 60px 0 0;
+        left: 400px;
     }
     .content-box {
-        max-width: 41vw;
+        bottom: 237px;
+    }
+}
+@media (max-width: 1250px) {
+    .content {
+        height: 64vw;
+    }
+    .content-about {
+        padding: 3px 0 0 0;
+        max-width: 39.5vw;
     }
     .bg-girl {
-        max-width: 79vmax;
-    }
-    .event-title {
-        font-size: 26px;
-        margin-bottom: 20px;
+        max-height: 100%;
+        right: -6vw;
+        left: initial;
     }
 }
 @media (max-width: 1050px) {
-    .content {
-        max-width: 88vw;
-    }
-    .content-background {
-        width: 60%;
-        right: 100px;
-    }
-    .bg-girl {
-        max-width: 740px;
-        left: -60px;
-    }
-    .content-box {
-        max-width: 350px;
-    }
     .content-title {
-        font-size: 26px;
+        font-size: calc(26px + 10 * (100vw / 1050));
     }
     .content-title-traning {
-        font-size: 26px;
-        letter-spacing: 0.01em;
+        font-size: calc(26px + 8 * (100vw / 1050));
     }
-    .content-about {
-        font-size: 16px;
-        padding: 0 60px 0 0;
-    }
-    .content-text {
-        margin-bottom: 43px;
-    }
-    .content-arrow {
-        margin-top: 46px;
-        width: 39px;
-        height: 40px;
-    }
-    .content-arrow img {
-        width: 40px;
-        height: 40px;
+    .content-box {
+        max-width: 48vw;
     }
     .event-card-item {
         height: 60vw;
+    }
+    .event-card-gradient {
+        padding: 14px 20px 0 20px;
+    }
+    .event-card-title {
+        font-size: calc(10px + 18 * (100vw / 1050));
     }
     .company-profit {
         margin-top: 40px;
@@ -81,49 +58,47 @@
     }
 }
 @media (max-width: 980px) {
+    .header-item {
+        gap: 8vw;
+    }
+    .bg {
+        margin-bottom: 100px;
+    }
+    .content {
+        height: 54vw;
+    }
+    .content-box {
+        bottom: 8.5vw;
+    }
+    .content-title {
+        margin-bottom: 1vw;
+        font-size: calc(26px + 7 * (100vw / 980));
+    }
+    .content-title-traning {
+        font-size: calc(26px + 5 * (100vw / 980));
+    }
+    .content-text {
+        margin-bottom: 1.5vw;
+    }
     .content-background {
-        right: 40px;
-        max-width: 528px;
+        right: 8vw;
+        max-width: 45vw;
         width: 100%;
+        position: absolute;
+        left: initial;
     }
     .content-arrow {
         margin-top: 10px;
     }
     .bg-girl {
-        max-width: 672px;
+        right: -9vw;
+        max-width: 59.5vmin;
+    }
+    .event-title {
+        font-size: 26px;
     }
     .event-card-btn {
         padding: 15px 16px;
-    }
-    /* footer */
-    footer {
-        margin-top: 76px;
-    }
-    .footer-cover {
-        flex-direction: column;
-        padding-top: 48px;
-        row-gap: 29px;
-        margin-bottom: 29px;
-    }
-    .footer-item {
-        justify-content: space-between;
-        width: 100%;
-    }
-    .footer-nav {
-        gap: 26px;
-    }
-    .footer-social {
-        gap: 33px;
-        align-self: flex-end;
-    }
-    .footer-social-email {
-        font-size: 12px;
-    }
-    .footer-fb-icon {
-        margin-left: 23px;
-    }
-    .footer-text {
-        font-size: 10px;
     }
     .schedule {
         margin-bottom: 96px;
@@ -217,8 +192,38 @@
         border: none;
         padding-top: 40px;
     }
+    /* footer */
+    footer {
+        margin-top: 76px;
+    }
+    .footer-cover {
+        flex-direction: column;
+        padding-top: 48px;
+        row-gap: 29px;
+        margin-bottom: 29px;
+    }
+    .footer-item {
+        justify-content: space-between;
+        width: 100%;
+    }
+    .footer-nav {
+        gap: 26px;
+    }
+    .footer-social {
+        gap: 33px;
+        align-self: flex-end;
+    }
+    .footer-social-email {
+        font-size: 12px;
+    }
+    .footer-fb-icon {
+        margin-left: 23px;
+    }
+    .footer-text {
+        font-size: 10px;
+    }
 }
-@media (max-width: 800px) {
+@media (max-width: 801px) {
     body {
         font-size: 12px;
     }
@@ -252,30 +257,46 @@
         width: 26px;
         height: 26px;
     }
-    /* content bg */
+    .bg {
+        margin-bottom: 13vw;
+    }
     .content {
-        padding-top: 26px;
-        margin-bottom: 104px;
-        max-width: 100%;
+        height: 427px;
+    }
+    .content-box {
+        bottom: initial;
+        top: 25px;
+        max-width: 359px;
+    }
+    .content-title {
+        font-size: 26px;
+        margin-bottom: 45px;
+    }
+    .content-title-traning {
+        font-size: 26px;
+    }
+    .content-about {
+        max-width: 260px;
+    }
+    .content-text {
+        font-size: 16px;
+        margin-bottom: 41px;
     }
     .content-arrow {
-        margin-top: 40px;
+        width: 38px;
+        height: 40px;
+        bottom: 2px;
     }
     .content-background {
-        max-width: 359px;
-        bottom: 0;
-        right: 0;
-        gap: 15px;
-    }
-    .bg-girl {
-        max-width: 399px;
-        width: 120%;
-        height: auto;
-        bottom: 0;
-        left: -41px;
+        max-width: 344px;
+        right: 2vw;
     }
     .gradient-second {
-        flex-basis: 50%;
+        flex-basis: 45%;
+    }
+    .bg-girl {
+        max-width: 393px;
+        right: -12px;
     }
     /* event */
     .event-title {
@@ -305,11 +326,6 @@
     }
     .event-card-gradient {
         padding: 4px 30px 0 24px;
-    }
-    .event-card-title {
-        font-size: 16px;
-        display: inline-block;
-        width: 140px;
     }
     .event-card-btn {
         display: none;
@@ -464,6 +480,29 @@
     }
 }
 @media (max-width: 620px) {
+    .content-box {
+        max-width: 420px;
+        margin-bottom: 13vw;
+    }
+    .content {
+        height: 100%;
+    }
+    .content-background {
+        height: 73vw;
+        width: 100%;
+        max-width: 94vw;
+        right: 0;
+    }
+    .bg-girl {
+        right: 0;
+        max-width: 88vw;
+    }
+    .content-arrow {
+       display: none;
+    }
+    .content-box, .content-background {
+        position: relative;
+    }
     .company-profit {
         -moz-column-gap: initial;
              column-gap: initial;
@@ -483,24 +522,11 @@
     }
 }
 @media (max-width: 580px) {
-    .content-box {
-        max-width: 500px;
-        margin-bottom: 40px;
-    }
-    .content {
-        display: flex;
-        flex-wrap: wrap;
-    }
     .content-background {
         position: relative;
-        height: 460px;
         width: 100%;
         max-width: 94vw;
         right: 0;
-    }
-    .bg-girl {
-        left: initial;
-        max-width: 88vw;
     }
     .content-arrow {
        display: none;
@@ -536,12 +562,31 @@
     }
 }
 @media (max-width: 500px) {
-   .schedule-grid {
+    .bg {
+        margin-bottom: 27vw;
+    }
+    .content-box {
+        max-width: 100%;
+        top: 0;
+        margin-bottom: 20vw;
+    }
+    .content-about {
+        max-width: 100%;
+    }
+    .content-about-link {
+        padding: 20px 0;
+        width: 100%;
+    }
+    .schedule-header {
+        margin-top: 78px;
+        margin-bottom: 0;
+    }
+    .schedule-grid {
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
     }
-   .schedule-grid-item:nth-child(n) {
+    .schedule-grid-item:nth-child(n) {
        padding-top: 0;
        padding-left: 20px;
     }
@@ -592,17 +637,6 @@
     .schedule-grid-title {
         margin-top: 15px;
     }
-    .content {
-        gap: 30px;
-        margin-bottom: 82px;
-    }
-    .content-background {
-        max-width: 91vw;
-        height: 78vw;
-    }
-    .bg-girl {
-        max-width: 100%;
-    }
     .footer-item {
         flex-direction: column;
         align-items: center;
@@ -638,7 +672,7 @@
         background-image: url(../images/event-card-image-response/event-360card03.png);
     }
     .event-card-gradient {
-        padding: 4px 30px 0 19px;
+        padding: 4px 30px 0 4px;
     }
     .event-card-title {
         width: 114px;
