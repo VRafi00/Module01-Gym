@@ -479,7 +479,7 @@
         display: none;
     }
 }
-@media (max-width: 620px) {
+@media (max-width: 670px) {
     .content-box {
         max-width: 420px;
         margin-bottom: 13vw;
@@ -503,25 +503,8 @@
     .content-box, .content-background {
         position: relative;
     }
-    .company-profit {
-        -moz-column-gap: initial;
-             column-gap: initial;
-        justify-content: space-between;
-    }
-    .company-box {
-        flex-direction: column-reverse;
-    }
-    .company-about {
-        width: 100%;
-    }
-    .company-bg {
-        width: 100%;
-    }
-    .company-profit-cover:nth-child(n) {
-        flex-basis: 90vmin;
-    }
 }
-@media (max-width: 580px) {
+@media (max-width: 600px) {
     .content-background {
         position: relative;
         width: 100%;
@@ -539,6 +522,23 @@
     }
     .card03 {
         background-image: url(../images/event-card-image-response/event-360card03.png);
+    }
+    .company-profit {
+        -moz-column-gap: initial;
+             column-gap: initial;
+        justify-content: space-between;
+    }
+    .company-box {
+        flex-direction: column-reverse;
+    }
+    .company-about {
+        width: 100%;
+    }
+    .company-bg {
+        width: 100%;
+    }
+    .company-profit-cover:nth-child(n) {
+        flex-basis: 90vmin;
     }
     .signUp-popUp-box {
         padding: 50px 10px;
@@ -563,19 +563,18 @@
 }
 @media (max-width: 500px) {
     .bg {
-        margin-bottom: 27vw;
+        margin-bottom: 14vw;
     }
     .content-box {
         max-width: 100%;
         top: 0;
-        margin-bottom: 20vw;
     }
     .content-about {
         max-width: 100%;
     }
     .content-about-link {
         padding: 20px 0;
-        width: 100%;
+        display: block;
     }
     .schedule-header {
         margin-top: 78px;
