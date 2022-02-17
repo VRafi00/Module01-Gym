@@ -527,15 +527,32 @@
         -moz-column-gap: initial;
              column-gap: initial;
         justify-content: space-between;
+        margin-top: 0;
+        padding-right: 20px;
     }
     .company-box {
         flex-direction: column-reverse;
+        padding-right: 20px;
     }
     .company-about {
         width: 100%;
     }
+    .company-information {
+        height: 1000px;
+        position: relative;
+    }
     .company-bg {
         width: 100%;
+        position: absolute;
+        bottom: 0;
+        height: initial;
+    }
+    .company-signUp {
+        position: absolute;
+        bottom: 60vw;
+        display: block;
+        width: 100%;
+        padding: 20px 0;
     }
     .company-profit-cover:nth-child(n) {
         flex-basis: 90vmin;
@@ -712,21 +729,8 @@
     .company {
         margin-top: 83px;
     }
-    .company-information {
-        position: relative;
-        height: 1000px;
-    }
     .company-about-text {
         margin-bottom: 14px;
-    }
-    .company-bg {
-        position: absolute;
-        bottom: 0;
-    }
-    .company-signUp {
-        position: absolute;
-        top: 697px;
-        width: 100%;
     }
     .company-profit {
         margin-top: 0;
