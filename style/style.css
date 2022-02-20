@@ -228,7 +228,6 @@ body {
 .content-box {
     max-width: 635px;
     position: absolute;
-    z-index: 1;
     bottom: 12.5vw;
 }
 .content {
@@ -242,6 +241,7 @@ body {
     left: 22.15vw;
     height: 100%;
     max-width: 70%;
+    z-index: -1;
 }
 .bg-girl {
     position: absolute;
